@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>516</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+  <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <div class="container">
+    <section class="slide one">
+      <div class="content">
+        <h1>Guess the difference!</h1>
+        <p>This is a study to understand how people perceive the bar chart in different sizes.</p>
+        <p>You will be shown a bar graph with two bars of different height and you have the guess the percentage  difference between the bar heights. For example </p>
+        <p>
+          <img src="images/example.png" srcset="images/example.png 2x, images/example.png 1x" style="float: left; margin: 0 20px 20px 0;" height="100" alt="">
+          <span class="text-muted">"You can guess the percentage difference between two bar height is <storng>50</storng>"</span>
+        </p>
+
+        <div class="clearfix"></div>
+
+        <small>Please fill in your details before continuing...</small>
+        <div class="form-group">
+          <label for="name">Name </label>
+          <input type="text" class="form-control subject" id="name" placeholder="Type in your name fistname">
+          <p class="help-block">Enter you name and click on next or press enter</p>
+        </div>
+        <div class="actions">
+          <button class="btn btn-info js_next" data-step="two">Next &rarr;</button>
+        </div>
+      </div>
+    </section>
+    <section class="hide slide two">
+      <div class="chart chart1">
+        <div class="bars">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="hide slide three">
+      <div class="content">
+        <div class="form-group">
+          <label for="chart1" class="lable-text">Enter the percentage difference </label>
+          <input type="number" class="form-control chart1val" id="chart1" placeholder="Number">
+          <p class="help-block">Enter the difference and click on next</p>
+        </div>
+        <div class="actions">
+          <button class="btn btn-info js_next" data-step="two">Next &rarr;</button>
+        </div>
+      </div>
+    </section>
+    <section class="hide slide four">
+      <div class="chart chart2">
+        <div class="bars">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="hide slide five">
+      <div class="content">
+        <div class="form-group">
+          <label for="chart2" class="lable-text">Enter the percentage difference</label>
+          <input type="number" class="form-control chart2val" id="chart2" placeholder="Number">
+          <p class="help-block">Enter the difference and click on next</p>
+        </div>
+        <div class="actions">
+          <button class="btn btn-info js_next" data-step="two">Next &rarr;</button>
+        </div>
+      </div>
+    </section>
+    <section class="hide slide six">
+      <div class="chart chart3">
+        <div class="bars">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="hide slide seven">
+      <div class="content">
+        <div class="form-group">
+          <label for="chart3" class="lable-text">Enter the percentage difference </label>
+          <input type="number" class="form-control chart3val" id="chart3" placeholder="Number">
+          <p class="help-block">Enter the difference and click on next</p>
+        </div>
+        <div class="actions">
+          <button class="btn btn-info js_next" data-step="two">Next &rarr;</button>
+        </div>
+      </div>
+    </section>
+    <section class="hide slide eight">
+      <div class="chart chart4">
+        <div class="bars">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="hide slide nine">
+      <div class="content">
+        <div class="form-group">
+          <label for="chart4" class="lable-text">Enter the percentage difference </label>
+          <input type="number" class="form-control chart4val last" id="chart4" placeholder="Number">
+          <p class="help-block">Enter the difference and click on next</p>
+        </div>
+        <div class="actions">
+          <button class="btn btn-info js_submit" data-step="two">Next &rarr;</button>
+        </div>
+      </div>
+    </section>
+    <section class="hide slide ten">
+      <div class="content">
+        <h1>Thanks a lot!</h1>
+        <p>Thanks a lot for participating in the study. We really appriciate it. Let us know if you any question.</p>
+        <br>
+        <br>
+        <a class="btn btn-info" href="/">Re-take</a>
+      </div>
+    </section>
+  </div>
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js(.) scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+  (function(b, o, i, l, e, r) {
+    b.GoogleAnalyticsObject = l;
+    b[l] || (b[l] =
+      function() {
+        (b[l].q = b[l].q || []).push(arguments)
+      });
+    b[l].l = +new Date;
+    e = o.createElement(i);
+    r = o.getElementsByTagName(i)[0];
+    e.src = 'https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e, r)
+  }(window, document, 'script', 'ga'));
+  ga('create', 'UA-XXXXX-X');
+  ga('send', 'pageview');
+  </script>
+</body>
+
+</html>

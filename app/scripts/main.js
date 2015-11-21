@@ -50,7 +50,52 @@ window.exp = (function() {
         bar2: {
           height: 300
         }
+      },
+
+      chart5: {
+        height: 320,
+        width: 480,
+        bar1: {
+          height: 30
+        },
+        bar2: {
+          height: 300
+        }
+      },
+
+      chart6: {
+        height: 320,
+        width: 480,
+        bar1: {
+          height: 30
+        },
+        bar2: {
+          height: 300
+        }
+      },
+
+      chart7: {
+        height: 320,
+        width: 480,
+        bar1: {
+          height: 30
+        },
+        bar2: {
+          height: 300
+        }
+      },
+
+      chart8: {
+        height: 320,
+        width: 480,
+        bar1: {
+          height: 30
+        },
+        bar2: {
+          height: 300
+        }
       }
+
     }
   };
 
@@ -79,7 +124,6 @@ getConfig = function() {
         }
 
       }
-      console.log(CONFIG)
       initCharts();
       renderLables();
       keyUps();
@@ -152,13 +196,13 @@ _sendAnswers = function(e) {
     data: {
       'subject': $('.subject')
         .val(),
-      'chart_1': $('.chart1val')
+      'chart_1': $('.chart2val')
         .val(),
-      'chart_2': $('.chart2val')
+      'chart_2': $('.chart4val')
         .val(),
-      'chart_3': $('.chart3val')
+      'chart_3': $('.chart6val')
         .val(),
-      'chart_4': $('.chart4val')
+      'chart_4': $('.chart8val')
         .val(),
       'comments': $('.comments')
         .val()

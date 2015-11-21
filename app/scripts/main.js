@@ -196,6 +196,10 @@ _sendAnswers = function(e) {
     data: {
       'subject': $('.subject')
         .val(),
+      'academic_bg': $('.academic_bg')
+        .val(),
+      'stats_class':  $('input:radio[name=stats_class]:checked')
+        .val(),
       'chart_1': $('.chart2val')
         .val(),
       'chart_2': $('.chart4val')
@@ -230,9 +234,29 @@ _handleNext = function(e) {
   var input = target.parents('.slide')
     .find('input')
 
-  if (!input.val()) {
-    input.parents('.form-group')
-      .addClass('has-error')
+  var isValid = true;
+
+  $.each(input, function(i, inp){
+      $(inp).parents('.form-group')
+        .removeClass('has-error')
+  })
+
+  $.each(input, function(i, inp){
+    if(!$(inp).val()) {
+      isValid = false;
+      return false;
+    }
+  })
+
+  if (!isValid) {
+
+    $.each(input, function(i, inp){
+      if(!$(inp).val()) {
+        $(inp).parents('.form-group')
+          .addClass('has-error')
+      }
+    })
+
     return false;
   } else {
     input.parents('form-group')

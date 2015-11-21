@@ -26,6 +26,14 @@ section.slide {
   bottom: 100px;
   right: 100px;
   background: #fff;
+  &.one {
+    position: relative;
+    top: 50px;
+    bottom: 50px;
+    right: 0;
+    overflow: auto;
+    left: 0;
+  }
 }
 
 .btn.btn-info {

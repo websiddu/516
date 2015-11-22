@@ -31,35 +31,11 @@
       <div class="content">
         <h1>Guess the difference!</h1>
         <p>This is a study to understand how people perceive the bar chart in different sizes.</p>
-        <p>You will be shown a bar graph with two bars of different height and you have to guess the percentage difference between the bar heights. For example </p>
+        <p>You will be shown a bar graph with two bars of different height and you have to guess the difference between the bar heights. For example </p>
         <p>
           <img src="images/example.png" style="float: left; margin: 0 20px 20px 0;" height="100" alt="">
-          <span class="text-muted">"e.g. In this graph, the percentage difference between two bars is <storng>50</storng>"</span>
+          <span class="text-muted">"e.g. In this graph, the difference between two bars is <storng>30</storng>"</span>
         </p>
-        <div class="clearfix"></div>
-        <small>Please fill in your details before continuing...</small>
-<!--         <div class="form-group">
-          <label for="name">Name </label>
-          <input type="text" class="form-control subject" id="name" placeholder="Type in your name first name">
-          <p class="help-block">Enter your name and click on next or press enter</p>
-        </div> -->
-        <div class="form-group">
-          <label for="name">Academic Background </label>
-          <input type="text" class="form-control academic_bg" id="academic_bg" placeholder="Your major..">
-          <p class="help-block">Enter your academic background e.g HCDE</p>
-        </div>
-        <div class="form-group">
-          <label for="name">Stats class taken </label>
-          <label class="radio-inline">
-            <input type="radio" name="stats_class" id="inlineRadio2" value="Yes"> Yes
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="stats_class" id="inlineRadio3" value="No"> No
-          </label>
-
-          <p class="help-block">Select yes if you have taken any level of stats class</p>
-        </div>
-
         <div class="actions">
           <button class="btn btn-info js_next" data-step="two">Next &rarr;</button>
         </div>
@@ -77,8 +53,8 @@
     <section class="hide slide three">
       <div class="content">
         <div class="form-group">
-          <label for="chart1" class="lable-text">Enter the percentage difference </label>
-          <input type="number" class="form-control chart1val" id="chart1" placeholder="Number">
+          <label for="chart1" class="lable-text">Enter the difference </label>
+          <input type="text" min="0" max="100" maxlength="2" class="form-control chart1val" id="chart1" placeholder="Number">
           <p class="help-block">Enter the difference and click on next</p>
         </div>
         <div class="actions">
@@ -98,8 +74,8 @@
     <section class="hide slide 5">
       <div class="content">
         <div class="form-group">
-          <label for="chart2" class="lable-text">Enter the percentage difference</label>
-          <input type="number" class="form-control chart2val" id="chart2" placeholder="Number">
+          <label for="chart2" class="lable-text">Enter the difference</label>
+          <input type="text" min="0" max="100" maxlength="2" class="form-control chart2val" id="chart2" placeholder="Number">
           <p class="help-block">Enter the difference and click on next</p>
         </div>
         <div class="actions">
@@ -119,8 +95,8 @@
     <section class="hide slide 7">
       <div class="content">
         <div class="form-group">
-          <label for="chart3" class="lable-text">Enter the percentage difference </label>
-          <input type="number" class="form-control chart3val" id="chart3" placeholder="Number">
+          <label for="chart3" class="lable-text">Enter the difference </label>
+          <input type="text" min="0" max="100" maxlength="2" class="form-control chart3val" id="chart3" placeholder="Number">
           <p class="help-block">Enter the difference and click on next</p>
         </div>
         <div class="actions">
@@ -140,8 +116,8 @@
     <section class="hide slide 9">
       <div class="content">
         <div class="form-group">
-          <label for="chart4" class="lable-text">Enter the percentage difference </label>
-          <input type="number" class="form-control chart4val" id="chart4" placeholder="Number">
+          <label for="chart4" class="lable-text">Enter the difference </label>
+          <input type="text" min="0" max="100" maxlength="2" class="form-control chart4val" id="chart4" placeholder="Number">
           <p class="help-block">Enter the difference and click on next</p>
         </div>
         <div class="actions">
@@ -161,8 +137,8 @@
     <section class="hide slide 11">
       <div class="content">
         <div class="form-group">
-          <label for="chart5" class="lable-text">Enter the percentage difference </label>
-          <input type="number" class="form-control chart5val" id="chart5" placeholder="Number">
+          <label for="chart5" class="lable-text">Enter the difference </label>
+          <input type="text" min="0" max="100" maxlength="2" class="form-control chart5val" id="chart5" placeholder="Number">
           <p class="help-block">Enter the difference and click on next</p>
         </div>
         <div class="actions">
@@ -182,8 +158,8 @@
     <section class="hide slide 13">
       <div class="content">
         <div class="form-group">
-          <label for="chart6" class="lable-text">Enter the percentage difference </label>
-          <input type="number" class="form-control chart6val" id="chart6" placeholder="Number">
+          <label for="chart6" class="lable-text">Enter the difference </label>
+          <input type="text" min="0" max="100" maxlength="2" class="form-control chart6val" id="chart6" placeholder="Number">
           <p class="help-block">Enter the difference and click on next</p>
         </div>
         <div class="actions">
@@ -203,12 +179,12 @@
     <section class="hide slide 15">
       <div class="content">
         <div class="form-group">
-          <label for="chart7" class="lable-text">Enter the percentage difference </label>
-          <input type="number" class="form-control chart7val" id="chart7" placeholder="Number">
+          <label for="chart7" class="lable-text">Enter the difference </label>
+          <input type="text" min="0" max="100" maxlength="2" class="form-control chart7val" id="chart7" placeholder="Number">
           <p class="help-block">Enter the difference and click on next</p>
         </div>
         <div class="actions">
-          <button class="btn btn-info " data-step="two">Next &rarr;</button>
+          <button class="btn btn-info js_next" data-step="two">Next &rarr;</button>
         </div>
       </div>
     </section>
@@ -224,21 +200,66 @@
     <section class="hide slide 17">
       <div class="content">
         <div class="form-group">
-          <label for="chart8" class="lable-text">Enter the percentage difference </label>
-          <input type="number" class="form-control chart8val last" id="chart8" placeholder="Number">
+          <label for="chart8" class="lable-text">Enter the difference </label>
+          <input type="text" min="0" max="100" maxlength="2" class="form-control chart8val last" id="chart8" placeholder="Number">
           <p class="help-block">Enter the difference and click on next</p>
         </div>
         <div class="actions">
-          <button class="btn btn-info js_submit" data-step="two">Next &rarr;</button>
+          <button class="btn btn-info js_next" data-step="two">Next &rarr;</button>
         </div>
       </div>
     </section>
     <section class="hide slide 18">
       <div class="content">
+        <!--         <div class="form-group">
+          <label for="name">Name </label>
+          <input type="text" class="form-control subject" id="name" placeholder="Type in your name first name">
+          <p class="help-block">Enter your name and click on next or press enter</p>
+        </div> -->
+        <div class="form-group">
+          <label for="name">Academic Background </label>
+          <input type="text" class="form-control academic_bg" id="academic_bg" placeholder="Your major..">
+          <p class="help-block">Enter your academic background e.g HCDE</p>
+        </div>
+        <div class="form-group">
+          <label for="name">Age </label>
+          <input type="text" min="0" max="100" maxlength="2" class="form-control age" id="age" placeholder="Enter your age..">
+        </div>
+
+
+        <div class="form-group">
+          <label for="name">Gender </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" id="inlineRadio4" value="Male"> Male
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" id="inlineRadio5" value="Female"> Female
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" id="inlineRadio6" value="Other"> Other
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Stats class taken </label>
+          <label class="radio-inline">
+            <input type="radio" name="stats_class" id="inlineRadio2" value="Yes"> Yes
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="stats_class" id="inlineRadio3" value="No"> No
+          </label>
+          <p class="help-block">Select yes if you have taken any level of stats class</p>
+        </div>
+        <div class="actions">
+          <button class="btn btn-info js_submit" data-step="">Done</button>
+        </div>
+        <br>
+      </div>
+    </section>
+    <section class="hide slide 19">
+      <div class="content">
         <h1>Thanks a lot!</h1>
         <p>Thanks a lot for participating in the study. We really appreciate it. Let us know if you any question.</p>
-        <br>
-        <br>
         <a class="btn btn-info" onclick="javascript: location.reload();">Re-take</a>
       </div>
     </section>

@@ -29,13 +29,20 @@
   <div class="container">
     <section class="slide one">
       <div class="content">
-        <h1>Guess the difference!</h1>
-        <p>This is a study to understand how people perceive the bar chart in different sizes.</p>
-        <p>You will be shown a bar graph with two bars of different height and you have to guess the difference between the bar heights. For example </p>
+        <h1>What's the difference between two bars?</h1>
+<p>This is a study to understand how people read bar chart. It takes approximately 2 minutes to complete.</p>
+
+<p>
+In the study, you will be shown 8 bar charts with two bars in each of them. All of the bar charts has a y-axis from 0 to 100. Each bar chart will be displayed on the screen for 3 seconds. After reading the bar chart, you need to estimate the difference between the two bars. For example</p>
         <p>
           <img src="images/example.png" style="float: left; margin: 0 20px 20px 0;" height="100" alt="">
-          <span class="text-muted">"e.g. In this graph, the difference between two bars is <storng>30</storng>"</span>
+          <span class="text-muted">"
+          In this chart, the difference between two bars is <strong>30</strong>"</span>
         </p>
+        <br>
+        <br>
+        <br>
+        <p>The first chart will show up immediately once you click the "Next" button. </p>
         <div class="actions">
           <button class="btn btn-info js_next" data-step="two">Next &rarr;</button>
         </div>
@@ -216,16 +223,33 @@
           <input type="text" class="form-control subject" id="name" placeholder="Type in your name first name">
           <p class="help-block">Enter your name and click on next or press enter</p>
         </div> -->
+        <h3>Could you provide some information about yourself?</h3>
         <div class="form-group">
-          <label for="name">Academic Background </label>
+          <label for="name">Are you currently a student?</label>
+          <label class="radio-inline">
+            <input type="radio" name="student" id="student_1" value="Yes"> Yes
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="student" id="student_2" value="No"> No
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="name">If yes, what is you major? </label>
           <input type="text" class="form-control academic_bg" id="academic_bg" placeholder="Your major..">
           <p class="help-block">Enter your academic background e.g HCDE</p>
         </div>
-        <div class="form-group">
-          <label for="name">Age </label>
-          <input type="text" min="0" max="100" maxlength="2" class="form-control age" id="age" placeholder="Enter your age..">
-        </div>
 
+        <div class="form-group">
+          <label for="name">Have you taken any college or higher level statistical courses? </label>
+          <label class="radio-inline">
+            <input type="radio" name="stats_class" id="inlineRadio2" value="Yes"> Yes
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="stats_class" id="inlineRadio3" value="No"> No
+          </label>
+          <p class="help-block">Select yes if you have taken any level of stats class</p>
+        </div>
 
         <div class="form-group">
           <label for="name">Gender </label>
@@ -240,16 +264,12 @@
           </label>
         </div>
 
+
         <div class="form-group">
-          <label for="name">Stats class taken </label>
-          <label class="radio-inline">
-            <input type="radio" name="stats_class" id="inlineRadio2" value="Yes"> Yes
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="stats_class" id="inlineRadio3" value="No"> No
-          </label>
-          <p class="help-block">Select yes if you have taken any level of stats class</p>
+          <label for="name">Age </label>
+          <input type="text" min="0" max="100" maxlength="2" class="form-control age" id="age" placeholder="Enter your age..">
         </div>
+
         <div class="actions">
           <button class="btn btn-info js_submit" data-step="">Done</button>
         </div>

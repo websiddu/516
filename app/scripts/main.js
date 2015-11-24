@@ -200,6 +200,8 @@ _sendAnswers = function(e) {
         .val(),
       'stats_class':  $('input:radio[name=stats_class]:checked')
         .val(),
+      'student':  $('input:radio[name=student]:checked')
+        .val(),
       'age': $('.age')
         .val(),
       'gender':  $('input:radio[name=gender]:checked')
